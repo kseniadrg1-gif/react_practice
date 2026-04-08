@@ -20,8 +20,8 @@ export default function App() {
         <section>
           <h3>Наш подход к обучению</h3>
           <ul>
-            {ways.map((way) => (
-              <WeyToTeach {...way} />
+            {ways.map((way, index) => (
+              <WeyToTeach key={index} {...way} />
             ))}
           </ul>
         </section>
