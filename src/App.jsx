@@ -20,10 +20,9 @@ export default function App() {
         <section>
           <h3>Наш подход к обучению</h3>
           <ul>
-            <WeyToTeach {...ways[1]} />
-            <WeyToTeach {...ways[2]} />
-            <WeyToTeach {...ways[3]} />
-            <WeyToTeach {...ways[4]} />
+            {ways.map((way) => (
+              <WeyToTeach {...way} />
+            ))}
           </ul>
         </section>
         <section>
